@@ -36,8 +36,7 @@ playtheme();
 
   $(document).keydown(function(e) {
   if (e.keyCode == 88 ) {
-    $('.ryu-ready').hide();
-    $('.ryu-still').hide();
+    $('.ryu-ready, .ryu-throwing, .ryu-still').hide();
     $('.ryu-cool').show();
   }
 })
@@ -45,7 +44,7 @@ playtheme();
 .keyup(function(e) {
   if (e.keyCode == 88){
     $('.ryu-still').show();
-    $('.ryu-cool').hide();
+    $('.ryu-cool, .ryu-ready, .ryu-throwing').hide();
   };
 });
 
