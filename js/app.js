@@ -30,7 +30,7 @@ playtheme();
   })
 
   .mouseup(function() {
-    $('.ryu-throwing').hide();
+    $('.ryu-throwing, .ryu-still, .ryu-cool').hide();
     $('.ryu-ready').show();
   });
 
